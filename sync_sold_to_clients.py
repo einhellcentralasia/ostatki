@@ -16,9 +16,10 @@ Read-only SharePoint folder sync:
 Safety (poka-yoke):
 - NO write calls to SharePoint (only GET)
 - Skips temp files like "~$..."
-- Handles missing table / missing columns per-file (logs + continues)
-- Handles Graph pagination and throttling retries
-- Path resolution is robust (auto-strips "Shared Documents/" prefix + URL encodes Cyrillic/commas)
+- Handles Graph pagination + throttling retries
+- Robust path resolution (auto-strips "Shared Documents/" prefix + URL encodes Cyrillic/commas)
+- If Table metadata isn't visible, fallback scans for headers SKU+Qty
+- Never crashes if nothing parsed: still writes empty outputs with correct schema
 """
 
 from __future__ import annotations
@@ -72,7 +73,6 @@ def new_session() -> requests.Session:
     return s
 
 def request_raw(ctx: GraphCtx, method: str, url: str, *, params=None, timeout: int = 60) -> requests.Response:
-    """Raw request with retry/backoff for 429/5xx; returns response."""
     max_tries = 8
     backoff = 1.0
     headers = {"Authorization": f"Bearer {ctx.token}", "Accept": "application/json"}
@@ -104,7 +104,6 @@ def request_json_ok(ctx: GraphCtx, method: str, url: str, *, params=None, expect
     return resp.json()
 
 def request_bytes(ctx: GraphCtx, url: str) -> bytes:
-    """Download bytes (GET) with retry/backoff."""
     max_tries = 8
     backoff = 1.0
     headers = {"Authorization": f"Bearer {ctx.token}"}
@@ -164,36 +163,30 @@ def graph_get_drive_id(ctx: GraphCtx, site_id: str) -> str:
     return drive_id
 
 def normalize_sp_path(p: str) -> str:
-    # normalize slashes, trim spaces, remove leading "/"
     p2 = p.strip().replace("\\", "/").lstrip("/")
-    # collapse accidental double slashes
     while "//" in p2:
         p2 = p2.replace("//", "/")
 
-    # Graph drive root already points to the document library (Shared Documents),
-    # so strip library prefix if user included it.
     low = p2.lower()
     for prefix in ("shared documents/", "documents/"):
         if low.startswith(prefix):
             p2 = p2[len(prefix):]
             break
-
     return p2
 
 def try_get_item_id_by_path(ctx: GraphCtx, drive_id: str, path: str) -> Optional[str]:
     path_clean = normalize_sp_path(path)
-    path_enc = quote(path_clean, safe="/")  # keep folder slashes, encode Cyrillic/commas/spaces
+    path_enc = quote(path_clean, safe="/")
     url = f"{GRAPH}/drives/{drive_id}/root:/{path_enc}"
     resp = request_raw(ctx, "GET", url, timeout=60)
     if resp.status_code == 200:
-        js = resp.json()
-        return js.get("id")
+        return resp.json().get("id")
     if resp.status_code == 404:
         return None
     die(f"Unexpected status {resp.status_code} resolving folder path.\nURL: {url}\nBody: {resp.text[:2000]}")
     return None
 
-def graph_list_root_children_names(ctx: GraphCtx, drive_id: str, limit: int = 50) -> List[str]:
+def graph_list_root_children_names(ctx: GraphCtx, drive_id: str, limit: int = 60) -> List[str]:
     url = f"{GRAPH}/drives/{drive_id}/root/children"
     params = {"$top": str(limit)}
     js = request_json_ok(ctx, "GET", url, params=params, expected=(200,))
@@ -257,45 +250,139 @@ def find_col_indices(headers: List[str]) -> Tuple[Optional[int], Optional[int]]:
             qty_idx = i
     return sku_idx, qty_idx
 
-def read_table_from_xlsx_bytes(xlsx_bytes: bytes, table_name: str) -> Optional[pd.DataFrame]:
-    wb = load_workbook(filename=io.BytesIO(xlsx_bytes), data_only=True, read_only=True)
+def iter_ws_tables(ws):
+    t = getattr(ws, "tables", None)
+    if not t:
+        return
+    try:
+        # TableList behaves like a dict
+        for name in list(t.keys()):
+            yield name, t[name]
+    except Exception:
+        # Fallback: assume iterable of table objects
+        try:
+            for tbl in t:
+                yield getattr(tbl, "name", None), tbl
+        except Exception:
+            return
 
-    for ws in wb.worksheets:
-        tables = getattr(ws, "tables", None)
-        if not tables:
+def extract_df_from_range(ws, ref: str) -> pd.DataFrame:
+    cells = ws[ref]
+    rows = [[c.value for c in row] for row in cells]
+    if not rows or len(rows) < 2:
+        return pd.DataFrame(columns=["SKU", "Qty"])
+    headers = [str(x) if x is not None else "" for x in rows[0]]
+    sku_idx, qty_idx = find_col_indices(headers)
+    if sku_idx is None or qty_idx is None:
+        return pd.DataFrame()  # signal "bad headers"
+    skus, qtys = [], []
+    for r in rows[1:]:
+        if sku_idx >= len(r) or qty_idx >= len(r):
             continue
-        if table_name in tables:
-            tbl = tables[table_name]
-            ref = tbl.ref
-            cells = ws[ref]
-            rows = [[c.value for c in row] for row in cells]
-            if not rows or len(rows) < 2:
-                return pd.DataFrame(columns=["SKU", "Qty"])
+        sku = r[sku_idx]
+        qty = r[qty_idx]
+        if sku is None or str(sku).strip() == "":
+            continue
+        try:
+            q = float(qty) if qty is not None and str(qty).strip() != "" else 0.0
+        except Exception:
+            q = 0.0
+        skus.append(str(sku).strip())
+        qtys.append(q)
+    return pd.DataFrame({"SKU": skus, "Qty": qtys})
 
-            headers = [str(x) if x is not None else "" for x in rows[0]]
-            sku_idx, qty_idx = find_col_indices(headers)
-            if sku_idx is None or qty_idx is None:
-                return None
+def fallback_scan_headers(ws, max_rows: int = 5000, max_cols: int = 80) -> Optional[pd.DataFrame]:
+    # Find header row containing SKU and Qty (anywhere), then read down until blank block.
+    mr = min(ws.max_row or 0, max_rows)
+    mc = min(ws.max_column or 0, max_cols)
+    if mr <= 0 or mc <= 0:
+        return None
 
-            data_rows = rows[1:]
-            skus, qtys = [], []
-            for r in data_rows:
-                if sku_idx >= len(r) or qty_idx >= len(r):
-                    continue
-                sku = r[sku_idx]
-                qty = r[qty_idx]
-                if sku is None or str(sku).strip() == "":
-                    continue
-                try:
-                    q = float(qty) if qty is not None and str(qty).strip() != "" else 0.0
-                except Exception:
-                    q = 0.0
-                skus.append(str(sku).strip())
-                qtys.append(q)
+    header_row = None
+    sku_col = None
+    qty_col = None
 
-            return pd.DataFrame({"SKU": skus, "Qty": qtys})
+    for r in range(1, mr + 1):
+        values = []
+        for c in range(1, mc + 1):
+            v = ws.cell(row=r, column=c).value
+            values.append("" if v is None else str(v))
+        sku_idx, qty_idx = find_col_indices(values)
+        if sku_idx is not None and qty_idx is not None:
+            header_row = r
+            sku_col = sku_idx + 1
+            qty_col = qty_idx + 1
+            break
 
-    return None
+    if header_row is None:
+        return None
+
+    skus, qtys = [], []
+    blank_streak = 0
+    for r in range(header_row + 1, mr + 1):
+        sku = ws.cell(row=r, column=sku_col).value
+        qty = ws.cell(row=r, column=qty_col).value
+
+        is_blank = (sku is None or str(sku).strip() == "") and (qty is None or str(qty).strip() == "")
+        if is_blank:
+            blank_streak += 1
+            if blank_streak >= 3:
+                break
+            continue
+        blank_streak = 0
+
+        if sku is None or str(sku).strip() == "":
+            continue
+        try:
+            q = float(qty) if qty is not None and str(qty).strip() != "" else 0.0
+        except Exception:
+            q = 0.0
+
+        skus.append(str(sku).strip())
+        qtys.append(q)
+
+    return pd.DataFrame({"SKU": skus, "Qty": qtys})
+
+def read_sku_qty_from_xlsx_bytes(xlsx_bytes: bytes, table_name: str, debug_tables: bool = False) -> Tuple[Optional[pd.DataFrame], str]:
+    """
+    Returns (df, reason).
+    df=None means hard failure.
+    df empty with columns means ok but no rows.
+    reason used for logs.
+    """
+    # IMPORTANT FIX: read_only=False so table metadata is available reliably
+    wb = load_workbook(filename=io.BytesIO(xlsx_bytes), data_only=True, read_only=False)
+
+    # 1) Try real Excel table by name (case-insensitive)
+    target = table_name.strip().lower()
+    for ws in wb.worksheets:
+        found = []
+        for tname, tbl in iter_ws_tables(ws) or []:
+            if tname:
+                found.append(tname)
+        if debug_tables and found:
+            print(f"   🧩 Sheet '{ws.title}' tables: {found}")
+
+        for tname, tbl in iter_ws_tables(ws) or []:
+            if not tname:
+                continue
+            if tname.strip().lower() == target:
+                ref = getattr(tbl, "ref", None)
+                if not ref:
+                    return None, "Table found but missing ref"
+                df = extract_df_from_range(ws, ref)
+                if df.empty and list(df.columns) != ["SKU", "Qty"]:
+                    # headers mismatch
+                    break
+                return df, "OK(table)"
+
+    # 2) Fallback scan headers (handles weird table metadata)
+    for ws in wb.worksheets:
+        df2 = fallback_scan_headers(ws)
+        if df2 is not None:
+            return df2, "OK(fallback-scan)"
+
+    return None, "Table not found + fallback scan failed"
 
 
 # -------------------------
@@ -315,11 +402,12 @@ def main() -> None:
     sp_table_name = env("SP_TABLE_NAME", default="Table1", required=False)
 
     recursive = env("SP_RECURSIVE", default="false", required=False).strip().lower() in ("1", "true", "yes", "y")
+    debug_tables = env("DEBUG_TABLES", default="false", required=False).strip().lower() in ("1", "true", "yes", "y")
 
     out_dir = "data"
     base_name = "sold_to_clients"
 
-    print(f"🟢 {now_ts()} Start. Recursive={recursive}")
+    print(f"🟢 {now_ts()} Start. Recursive={recursive} DebugTables={debug_tables}")
     print(f"   Site: {sp_site_hostname}{sp_site_path}")
     print(f"   Folder (raw): {sp_xlsx_path_raw}")
     print(f"   Folder (norm): {normalize_sp_path(sp_xlsx_path_raw)}")
@@ -333,9 +421,6 @@ def main() -> None:
 
     folder_item_id = try_get_item_id_by_path(ctx, drive_id, sp_xlsx_path_raw)
     if not folder_item_id:
-        # Second attempt: if user included library name explicitly, normalize again (already does),
-        # but we also try with a leading "General/..." vs "/General/..." differences are handled.
-        # If still not found, print root children for debugging.
         root_names = graph_list_root_children_names(ctx, drive_id, limit=60)
         die(
             "Folder not found by path (Graph 404 itemNotFound).\n"
@@ -352,7 +437,11 @@ def main() -> None:
     agg: Dict[str, float] = {}
     processed = 0
     skipped = 0
-    skipped_no_table_or_cols = 0
+    used_fallback = 0
+
+    # For poka-yoke: limit verbose per-file logs
+    max_warns = 50
+    warns = 0
 
     for it in xlsx_items:
         name = it.get("name", "")
@@ -365,21 +454,30 @@ def main() -> None:
         try:
             b = request_bytes(ctx, content_url)
         except Exception as e:
-            print(f"⚠️ Skip '{name}': download failed: {e}")
+            if warns < max_warns:
+                print(f"⚠️ Skip '{name}': download failed: {e}")
+                warns += 1
             skipped += 1
             continue
 
         try:
-            df = read_table_from_xlsx_bytes(b, sp_table_name)
+            df, reason = read_sku_qty_from_xlsx_bytes(b, sp_table_name, debug_tables=False)
         except Exception as e:
-            print(f"⚠️ Skip '{name}': parse failed: {e}")
+            if warns < max_warns:
+                print(f"⚠️ Skip '{name}': parse failed: {e}")
+                warns += 1
             skipped += 1
             continue
 
         if df is None:
-            print(f"⚠️ Skip '{name}': table '{sp_table_name}' not found or SKU/Qty columns missing")
-            skipped_no_table_or_cols += 1
+            if warns < max_warns:
+                print(f"⚠️ Skip '{name}': {reason}")
+                warns += 1
+            skipped += 1
             continue
+
+        if reason.endswith("(fallback-scan)"):
+            used_fallback += 1
 
         if not df.empty:
             for sku, qty in zip(df["SKU"].tolist(), df["Qty"].tolist()):
@@ -387,14 +485,13 @@ def main() -> None:
 
         processed += 1
 
-    result = (
-        pd.DataFrame([{"SKU": sku, "Qty": agg[sku]} for sku in agg.keys()])
-        .sort_values(["SKU"], kind="stable")
-    )
-
-    # Make Qty nice-looking: ints remain ints
-    if not result.empty:
+    # Poka-yoke: always produce a dataframe with correct schema
+    if agg:
+        result = pd.DataFrame([{"SKU": sku, "Qty": agg[sku]} for sku in agg.keys()])
+        result = result.sort_values(["SKU"], kind="stable")
         result["Qty"] = result["Qty"].apply(lambda x: int(x) if float(x).is_integer() else float(x))
+    else:
+        result = pd.DataFrame(columns=["SKU", "Qty"])
 
     os.makedirs(out_dir, exist_ok=True)
 
@@ -409,10 +506,14 @@ def main() -> None:
 
     dur = time.perf_counter() - t0
     print("✅ Done.")
-    print(f"🧾 Processed xlsx: {processed} | Skipped: {skipped + skipped_no_table_or_cols}")
+    print(f"🧾 Processed xlsx: {processed} | Skipped: {skipped} | Used fallback: {used_fallback}")
     print(f"🧮 Unique SKUs: {len(result)}")
     print(f"⏱️ Runtime: {dur:.2f} seconds")
     print(f"📁 Outputs: {parquet_path}, {csv_path}, {json_path}")
+
+    # Optional deep debug for 1 file if you want: set DEBUG_TABLES=true and rerun
+    if debug_tables:
+        print("🔎 DEBUG_TABLES=true: rerun will print detected table names per sheet for troubleshooting.")
 
 
 if __name__ == "__main__":
