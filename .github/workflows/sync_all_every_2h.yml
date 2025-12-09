@@ -3,7 +3,7 @@ name: Sync all (1_scrape → 2_sku_master → 3_sku_updated)
 on:
   workflow_dispatch:
   schedule:
-    # Every 2 hours, Monday–Friday (GitHub cron is UTC)
+    # Every 2 hours, Monday–Friday (GitHub cron uses UTC)
     - cron: "0 */2 * * 1-5"
 
 permissions:
@@ -48,15 +48,16 @@ jobs:
           TENANT_ID: ${{ secrets.TENANT_ID }}
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
-          # Optional overrides (usually not needed):
-          # SP_SITE_HOSTNAME: "bavatools.sharepoint.com"
-          # SKU_SITE_PATH: "/sites/Einhell_common"
-          # SKU_XLSX_PATH: "/Shared Documents/General/_system_files/Bava_data.xlsx"
-          # SKU_TABLE_NAME: "list_stock_final_table_transit_table"
-          # SKU_OUTPUT_NAME: "SKU"
         run: |
           set -euo pipefail
           python 2_sku_master.py
+
+      - name: Sanity check required inputs exist
+        run: |
+          set -euo pipefail
+          test -f data/SKU/SKU.parquet || (echo "❌ Missing data/SKU/SKU.parquet" && exit 2)
+          # Optional: add more required files if you want strictness:
+          # test -f data/in_transit_table/in_transit_table.parquet || exit 2
 
       - name: 3) Build SKU_updated from parquet inputs → /data/SKU_updated
         run: |
@@ -75,6 +76,7 @@ jobs:
             echo "🟡 No changes in data/ — skipping commit"
           else
             git commit -m "Update data (SharePoint + SKU + SKU_updated)"
+            git pull --rebase
             git push
             echo "✅ Changes pushed"
           fi
