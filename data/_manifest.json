@@ -11,7 +11,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 720,
-    "runtime_s": 79.04
+    "runtime_s": 79.56
   },
   {
     "name": "transit_booked_table",
@@ -25,7 +25,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 178,
-    "runtime_s": 3.1
+    "runtime_s": 3.11
   },
   {
     "name": "booked_table",
@@ -53,7 +53,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 126,
-    "runtime_s": 5.04
+    "runtime_s": 4.68
   },
   {
     "name": "demo_table",
@@ -67,7 +67,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 409,
-    "runtime_s": 13.93
+    "runtime_s": 14.39
   },
   {
     "name": "service_table",
@@ -81,7 +81,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 122,
-    "runtime_s": 21.88
+    "runtime_s": 24.73
   },
   {
     "name": "inbound_table",
@@ -95,7 +95,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 856,
-    "runtime_s": 9.79
+    "runtime_s": 9.62
   },
   {
     "name": "sold_to_distr_table",
@@ -109,7 +109,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 747,
-    "runtime_s": 64.11
+    "runtime_s": 68.62
   },
   {
     "name": "spark_table",
@@ -122,8 +122,8 @@
     "processed_xlsx": 28,
     "skipped_xlsx": 0,
     "used_fallback": 0,
-    "unique_skus": 202,
-    "runtime_s": 11.68
+    "unique_skus": 201,
+    "runtime_s": 12.49
   },
   {
     "name": "in_transit_table",
@@ -137,7 +137,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 190,
-    "runtime_s": 1.99
+    "runtime_s": 2.37
   },
   {
     "name": "tref_table",
@@ -151,6 +151,6 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 254,
-    "runtime_s": 136.6
+    "runtime_s": 136.64
   }
 ]
