@@ -2,3 +2,4 @@ pandas==2.2.3
 pyarrow==18.1.0
 openpyxl==3.1.5
 requests==2.32.3
+PyYAML==6.0.2
