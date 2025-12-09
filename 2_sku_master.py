@@ -9,7 +9,7 @@ import sys
 import time
 import json
 from dataclasses import dataclass
-from typing import Iterable, Optional, Tuple, List
+from typing import Optional, Tuple, List
 
 import pandas as pd
 import requests
@@ -257,25 +257,31 @@ def select_columns_case_insensitive(df: pd.DataFrame, wanted: List[str]) -> pd.D
     return out
 
 def coerce_eta_date(df: pd.DataFrame) -> pd.DataFrame:
-    # ETA_Almaty is dd.mm.yyyy
-    df["ETA_Almaty"] = pd.to_datetime(df["ETA_Almaty"], dayfirst=True, errors="coerce").dt.date
+    # ETA_Almaty is dd.mm.yyyy (some rows may be blank/invalid -> NaT)
+    df["ETA_Almaty"] = pd.to_datetime(df["ETA_Almaty"], dayfirst=True, errors="coerce")
     return df
 
 def save_outputs(df: pd.DataFrame, name: str) -> None:
     out_dir = os.path.join("data", name)
     ensure_dir(out_dir)
 
+    # Parquet: keep datetime dtype
     df.to_parquet(os.path.join(out_dir, f"{name}.parquet"), index=False)
 
-    df.to_csv(
-        os.path.join(out_dir, f"{name}.csv"),
-        index=False,
-        encoding="utf-8",
-        date_format="%d.%m.%Y",
-    )
+    # CSV: format ETA as dd.mm.yyyy (blank if missing)
+    df_csv = df.copy()
+    if "ETA_Almaty" in df_csv.columns:
+        df_csv["ETA_Almaty"] = df_csv["ETA_Almaty"].dt.strftime("%d.%m.%Y")
+    df_csv.to_csv(os.path.join(out_dir, f"{name}.csv"), index=False, encoding="utf-8")
+
+    # JSON: make it serializable (NaT/NaN -> None)
+    df_json = df.copy()
+    if "ETA_Almaty" in df_json.columns:
+        df_json["ETA_Almaty"] = df_json["ETA_Almaty"].dt.strftime("%d.%m.%Y")
+    df_json = df_json.where(pd.notna(df_json), None)
 
     with open(os.path.join(out_dir, f"{name}.json"), "w", encoding="utf-8") as f:
-        json.dump(df.to_dict(orient="records"), f, ensure_ascii=False, indent=2)
+        json.dump(df_json.to_dict(orient="records"), f, ensure_ascii=False, indent=2)
 
 
 # -------------------------
