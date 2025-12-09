@@ -64,6 +64,12 @@ sources:
     xlsx_path: "/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Товары в пути_raw"
     recursive: false
 
+  - name: "preorders_table"
+    enabled: true
+    site_path: "/sites/Einhell"
+    xlsx_path: "/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Предзаказы_raw"
+    recursive: false
+    
   - name: "tref_table"
     enabled: true
     site_path: "/sites/Einhell_common"
