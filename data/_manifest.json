@@ -11,7 +11,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 720,
-    "runtime_s": 84.41
+    "runtime_s": 71.52
   },
   {
     "name": "transit_booked_table",
@@ -25,7 +25,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 178,
-    "runtime_s": 3.42
+    "runtime_s": 2.92
   },
   {
     "name": "booked_table",
@@ -39,7 +39,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 275,
-    "runtime_s": 6.71
+    "runtime_s": 4.64
   },
   {
     "name": "demo_astana_table",
@@ -53,7 +53,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 126,
-    "runtime_s": 5.24
+    "runtime_s": 4.48
   },
   {
     "name": "demo_table",
@@ -67,7 +67,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 409,
-    "runtime_s": 16.21
+    "runtime_s": 13.08
   },
   {
     "name": "service_table",
@@ -81,7 +81,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 122,
-    "runtime_s": 25.05
+    "runtime_s": 19.64
   },
   {
     "name": "inbound_table",
@@ -95,7 +95,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 856,
-    "runtime_s": 10.62
+    "runtime_s": 9.2
   },
   {
     "name": "sold_to_distr_table",
@@ -109,7 +109,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 747,
-    "runtime_s": 68.06
+    "runtime_s": 56.99
   },
   {
     "name": "spark_table",
@@ -123,7 +123,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 201,
-    "runtime_s": 12.72
+    "runtime_s": 11.75
   },
   {
     "name": "in_transit_table",
@@ -137,7 +137,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 190,
-    "runtime_s": 2.18
+    "runtime_s": 1.97
   },
   {
     "name": "preorders_table",
@@ -151,7 +151,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 143,
-    "runtime_s": 2.45
+    "runtime_s": 1.97
   },
   {
     "name": "tref_table",
@@ -159,12 +159,12 @@
     "site_path": "/sites/Einhell_common",
     "xlsx_path": "/Shared Documents/General/Маркетплейсы/Preorders/Preorders_raw",
     "recursive": false,
-    "files_total": 241,
-    "files_xlsx": 241,
-    "processed_xlsx": 241,
+    "files_total": 242,
+    "files_xlsx": 242,
+    "processed_xlsx": 242,
     "skipped_xlsx": 0,
     "used_fallback": 0,
-    "unique_skus": 254,
-    "runtime_s": 145.15
+    "unique_skus": 256,
+    "runtime_s": 144.17
   }
 ]
