@@ -39,7 +39,7 @@ jobs:
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
           CONFIG_PATH: "sharepoint_sources.yml"
         run: |
-          python sync_sold_to_clients.py
+          python 1_scrape_sp_files.py
 
       - name: Commit outputs (only if changed)
         run: |
