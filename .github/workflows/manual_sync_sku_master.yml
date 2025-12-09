@@ -1,0 +1,52 @@
+name: Manual sync SKU master
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run SKU master sync (read-only SharePoint → repo data/)
+        env:
+          TENANT_ID: ${{ secrets.TENANT_ID }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+
+          # optional overrides (leave as-is unless you want to change defaults)
+          # SP_SITE_HOSTNAME: "bavatools.sharepoint.com"
+          # SKU_SITE_PATH: "/sites/Einhell_common"
+          # SKU_XLSX_PATH: "/Shared Documents/General/_system_files/Bava_data.xlsx"
+          # SKU_TABLE_NAME: "list_stock_final_table_transit_table"
+          # SKU_OUTPUT_NAME: "SKU"
+        run: |
+          python 2_sku_master.py
+
+      - name: Commit outputs (only if changed)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/SKU/
+          if git diff --cached --quiet; then
+            echo "🟡 No changes in data/SKU/ — skipping commit"
+          else
+            git commit -m "Update SKU master data"
+            git push
+            echo "✅ Changes pushed"
+          fi
