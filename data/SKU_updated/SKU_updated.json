@@ -22,7 +22,7 @@
     "Model": "Аккум. Реноватор Einhell TC-MG 18 Li-Solo (4465170)",
     "In_transit": 0,
     "Total_preorders": 50,
-    "Stock": 32,
+    "Stock": 30,
     "RSP": 29900,
     "ETA_Almaty": null
   },
@@ -67,7 +67,7 @@
     "Model": "Аккум. Ударный Шуруповерт Einhell TP-CD 18/50 Li-i BL-Solo (4513942)",
     "In_transit": 100,
     "Total_preorders": 0,
-    "Stock": 26,
+    "Stock": 24,
     "RSP": 47600,
     "ETA_Almaty": "24.11.2025"
   },
@@ -103,7 +103,7 @@
     "Model": "Аккум. Сабельная пила Einhell TE-AP 18/22 Li-Solo (4326300)",
     "In_transit": 0,
     "Total_preorders": 54,
-    "Stock": 11,
+    "Stock": 9,
     "RSP": 39900,
     "ETA_Almaty": null
   },
@@ -112,7 +112,7 @@
     "Model": "Аккум. Виброшлифмашина Einhell TC-OS 18/187 Li Solo (4460725)",
     "In_transit": 0,
     "Total_preorders": 56,
-    "Stock": 11,
+    "Stock": 9,
     "RSP": 29900,
     "ETA_Almaty": null
   },
@@ -121,7 +121,7 @@
     "Model": "Сетев. Углошлифмашина Einhell TC-AG 125/850 (4430971)",
     "In_transit": -26,
     "Total_preorders": 0,
-    "Stock": 56,
+    "Stock": 54,
     "RSP": 20800,
     "ETA_Almaty": null
   },
@@ -247,7 +247,7 @@
     "Model": "Сетев. Циркулярная пила Einhell TC-CS 1250 (4331040)",
     "In_transit": 0,
     "Total_preorders": 0,
-    "Stock": 82,
+    "Stock": 78,
     "RSP": 40800,
     "ETA_Almaty": null
   },
@@ -265,7 +265,7 @@
     "Model": "Сетев. Лобзик Einhell TC-JS 60/1 (4321135)",
     "In_transit": 0,
     "Total_preorders": 0,
-    "Stock": 144,
+    "Stock": 142,
     "RSP": 19900,
     "ETA_Almaty": null
   },
@@ -355,7 +355,7 @@
     "Model": "Зарядное устройство в комплекте Einhell 18V 2,5Ah PXC Starter Kit (4512097)",
     "In_transit": -339,
     "Total_preorders": 300,
-    "Stock": 165,
+    "Stock": 155,
     "RSP": 12900,
     "ETA_Almaty": null
   },
@@ -364,7 +364,7 @@
     "Model": "Зарядное устройство в комплекте Einhell 18V 4,0Ah PXC Starter Kit 1 (4512042)",
     "In_transit": 364,
     "Total_preorders": 492,
-    "Stock": 208,
+    "Stock": 198,
     "RSP": 23400,
     "ETA_Almaty": "16.12.2025"
   },
@@ -400,7 +400,7 @@
     "Model": "Аккум. Перфоратор SDS-Plus Einhell HEROCCO 18/20 - Solo (4513900)",
     "In_transit": 100,
     "Total_preorders": 52,
-    "Stock": 1,
+    "Stock": -1,
     "RSP": 82900,
     "ETA_Almaty": "24.11.2025"
   },
@@ -436,7 +436,7 @@
     "Model": "Аккум. Перфоратор SDS-Plus Einhell TE-HD 18/20 Li - Solo (4514260)",
     "In_transit": 48,
     "Total_preorders": 0,
-    "Stock": 3,
+    "Stock": 1,
     "RSP": 88400,
     "ETA_Almaty": "24.11.2025"
   },
@@ -463,7 +463,7 @@
     "Model": "Аккум. Ударная дрель Einhell TE-ID 18 Li - Solo (4513960)",
     "In_transit": 32,
     "Total_preorders": 0,
-    "Stock": 3,
+    "Stock": 1,
     "RSP": 39000,
     "ETA_Almaty": "24.11.2025"
   },
@@ -481,7 +481,7 @@
     "Model": "Аккум. Строительный миксер Einhell TP-MX 18-2 Li BL - Solo (4258770)",
     "In_transit": 0,
     "Total_preorders": 0,
-    "Stock": 14,
+    "Stock": 12,
     "RSP": 115600,
     "ETA_Almaty": null
   },
@@ -508,7 +508,7 @@
     "Model": "Аккум. Углошлифмашина Einhell AXXIO 18/125 - Solo (4431140)",
     "In_transit": 150,
     "Total_preorders": 52,
-    "Stock": -2,
+    "Stock": -6,
     "RSP": 60200,
     "ETA_Almaty": "24.11.2025"
   },
@@ -562,7 +562,7 @@
     "Model": "Аккум. Углошлифмашина Einhell AXXIO 36/230 Q - Solo (4431160)",
     "In_transit": 10,
     "Total_preorders": 0,
-    "Stock": 6,
+    "Stock": 4,
     "RSP": 136000,
     "ETA_Almaty": "24.11.2025"
   },
@@ -589,7 +589,7 @@
     "Model": "Аккум. Реноватор Einhell TP-MG 18 Li BL - Solo (4465190)",
     "In_transit": 48,
     "Total_preorders": 56,
-    "Stock": 3,
+    "Stock": 1,
     "RSP": 88400,
     "ETA_Almaty": "24.11.2025"
   },
@@ -634,7 +634,7 @@
     "Model": "Аккум. Шуруповерт Einhell TE-CD 18/40 Li BL - Solo (4513997)",
     "In_transit": 96,
     "Total_preorders": 96,
-    "Stock": 36,
+    "Stock": 31,
     "RSP": 39000,
     "ETA_Almaty": "24.11.2025"
   },
@@ -643,7 +643,7 @@
     "Model": "Аккум. Шуруповерт Einhell TP-CD 18/60 Li BL - Solo (4514210)",
     "In_transit": 100,
     "Total_preorders": 100,
-    "Stock": 34,
+    "Stock": 31,
     "RSP": 61200,
     "ETA_Almaty": "24.11.2025"
   },
@@ -715,7 +715,7 @@
     "Model": "Аккум. Шуруповерт Einhell TE-CD 18/45 3X-Li +22 1x2,0Ah (4513990)",
     "In_transit": 0,
     "Total_preorders": 0,
-    "Stock": 14,
+    "Stock": 12,
     "RSP": 89900,
     "ETA_Almaty": null
   },
@@ -922,7 +922,7 @@
     "Model": "Аккум. Рубанок Einhell TE-PL 18/82 Li - Solo (4345400)",
     "In_transit": 6,
     "Total_preorders": 60,
-    "Stock": 6,
+    "Stock": 4,
     "RSP": 74800,
     "ETA_Almaty": "24.11.2025"
   },
@@ -985,7 +985,7 @@
     "Model": "Аккум. Циркулярная пила Einhell TP-CS 18/190 Li BL - Solo (4331210)",
     "In_transit": 20,
     "Total_preorders": 0,
-    "Stock": 4,
+    "Stock": 2,
     "RSP": 115600,
     "ETA_Almaty": "24.11.2025"
   },
@@ -1030,7 +1030,7 @@
     "Model": "Аккум. Лобзик Einhell TC-JS 18 Li (1x2,5 Ah) (4321228)",
     "In_transit": 0,
     "Total_preorders": 0,
-    "Stock": 5,
+    "Stock": 3,
     "RSP": 68000,
     "ETA_Almaty": null
   },
@@ -1264,7 +1264,7 @@
     "Model": "Аккум. Технический фен Einhell TE-HA 18 Li - Solo (4520500)",
     "In_transit": 31,
     "Total_preorders": 56,
-    "Stock": 5,
+    "Stock": 3,
     "RSP": 49000,
     "ETA_Almaty": "24.11.2025"
   },
@@ -1777,7 +1777,7 @@
     "Model": "Аккумулятор Einhell 18V 3,0Ah SEALED PXC Plus A2 (4511618)",
     "In_transit": 36,
     "Total_preorders": 0,
-    "Stock": 8,
+    "Stock": 6,
     "RSP": 35400,
     "ETA_Almaty": "24.11.2025"
   },
@@ -1786,7 +1786,7 @@
     "Model": "Аккумулятор Einhell 18V 4,0Ah SEALED PXC Plus (4511627)",
     "In_transit": 36,
     "Total_preorders": 0,
-    "Stock": 4,
+    "Stock": 2,
     "RSP": 40800,
     "ETA_Almaty": "24.11.2025"
   },
@@ -1885,7 +1885,7 @@
     "Model": "Сетев. Перфоратор SDS-Plus Einhell TC-RH 800 4F (4257980)",
     "In_transit": -72,
     "Total_preorders": 0,
-    "Stock": 42,
+    "Stock": 40,
     "RSP": 71400,
     "ETA_Almaty": null
   },
@@ -2767,7 +2767,7 @@
     "Model": "Сетев. Циркулярная пила Einhell TE-CS 190/1 (4331005)",
     "In_transit": 20,
     "Total_preorders": 0,
-    "Stock": 21,
+    "Stock": 19,
     "RSP": 55900,
     "ETA_Almaty": "24.11.2025"
   },
@@ -2839,7 +2839,7 @@
     "Model": "Направляющая шина для циркулярной пилы Einhell Guide Rail Alu 2x1000mm (4502118)",
     "In_transit": 0,
     "Total_preorders": 0,
-    "Stock": 34,
+    "Stock": 32,
     "RSP": 51000,
     "ETA_Almaty": null
   },
@@ -3010,7 +3010,7 @@
     "Model": "Сетев. Ленточная шлифмашина Einhell TC-BS 8038 (4466260)",
     "In_transit": 12,
     "Total_preorders": 54,
-    "Stock": 4,
+    "Stock": 2,
     "RSP": 44200,
     "ETA_Almaty": "24.11.2025"
   },
@@ -3388,7 +3388,7 @@
     "Model": "Сетев. Клеевой пистолет Einhell TC-GG 30 (4522170)",
     "In_transit": 0,
     "Total_preorders": 0,
-    "Stock": 62,
+    "Stock": 58,
     "RSP": 8100,
     "ETA_Almaty": null
   },
@@ -3478,7 +3478,7 @@
     "Model": "Аккум. Гравер Einhell TE-MT 7,2 Li (4419330)",
     "In_transit": 0,
     "Total_preorders": 0,
-    "Stock": 7,
+    "Stock": 5,
     "RSP": 47600,
     "ETA_Almaty": null
   },
@@ -3496,7 +3496,7 @@
     "Model": "Сумка для инструментов Einhell Einhell Bag 45/29 (4530074)",
     "In_transit": 0,
     "Total_preorders": 0,
-    "Stock": 164,
+    "Stock": 162,
     "RSP": 19000,
     "ETA_Almaty": null
   },
@@ -3550,7 +3550,7 @@
     "Model": "Кейс Einhell E-Case S-F (4540011)",
     "In_transit": 24,
     "Total_preorders": 100,
-    "Stock": 0,
+    "Stock": -4,
     "RSP": 23800,
     "ETA_Almaty": "24.11.2025"
   },
@@ -3577,7 +3577,7 @@
     "Model": "Кейс с колесиками Einhell E-Case L with wheels (4540014)",
     "In_transit": 24,
     "Total_preorders": 0,
-    "Stock": 0,
+    "Stock": -4,
     "RSP": 61200,
     "ETA_Almaty": "24.11.2025"
   },
@@ -3586,7 +3586,7 @@
     "Model": "Комплект кейсов Einhell E-Case Tower (4540015)",
     "In_transit": 25,
     "Total_preorders": 50,
-    "Stock": 0,
+    "Stock": -4,
     "RSP": 96800,
     "ETA_Almaty": "24.11.2025"
   },
@@ -3595,7 +3595,7 @@
     "Model": "Кейс + поролоновый вкладыш Einhell E-Case S-F incl. grid foam (4540019)",
     "In_transit": 25,
     "Total_preorders": 0,
-    "Stock": 0,
+    "Stock": -4,
     "RSP": 34000,
     "ETA_Almaty": "24.11.2025"
   },
@@ -3604,7 +3604,7 @@
     "Model": "Кейс + пластиковые перегородки Einhell E-Case S-F incl. dividers (4540020)",
     "In_transit": 25,
     "Total_preorders": 50,
-    "Stock": 0,
+    "Stock": -4,
     "RSP": 30600,
     "ETA_Almaty": "24.11.2025"
   },
@@ -3613,7 +3613,7 @@
     "Model": "Кейс Einhell E-Case M (4540021)",
     "In_transit": 25,
     "Total_preorders": 0,
-    "Stock": 0,
+    "Stock": -4,
     "RSP": 39000,
     "ETA_Almaty": "24.11.2025"
   },
@@ -3730,7 +3730,7 @@
     "Model": "Сетев. Торцовочная пила Einhell TE-SM 8 L Dual (4300866)",
     "In_transit": 0,
     "Total_preorders": 0,
-    "Stock": 48,
+    "Stock": 46,
     "RSP": 149600,
     "ETA_Almaty": null
   },
@@ -5269,7 +5269,7 @@
     "Model": "Сетев. Точильный станок Einhell TC-XG 75 Kit (4412559)",
     "In_transit": 32,
     "Total_preorders": 0,
-    "Stock": 3,
+    "Stock": 1,
     "RSP": 51000,
     "ETA_Almaty": "24.11.2025"
   },
@@ -5989,7 +5989,7 @@
     "Model": "Мешки для пылесоса в комплекте Einhell Dirt Bag Filter 20l (5 pcs.) (2351152)",
     "In_transit": 0,
     "Total_preorders": 0,
-    "Stock": 378,
+    "Stock": 376,
     "RSP": 11500,
     "ETA_Almaty": null
   },
@@ -6016,7 +6016,7 @@
     "Model": "Мешки для пылесоса в комплекте Einhell Dirt Bag Filter 30l (5 pcs.) (2351170)",
     "In_transit": 0,
     "Total_preorders": 0,
-    "Stock": 201,
+    "Stock": 199,
     "RSP": 13600,
     "ETA_Almaty": null
   },
@@ -10561,7 +10561,7 @@
     "Model": "Аккум. Винтоверт Einhell TP-CI 18/220 Li BL - Solo (4510085)",
     "In_transit": 48,
     "Total_preorders": 56,
-    "Stock": 0,
+    "Stock": -2,
     "RSP": 66200,
     "ETA_Almaty": "24.11.2025"
   },
@@ -10660,7 +10660,7 @@
     "Model": "Сетев. Перфоратор SDS-Plus Einhell TC-RH 1600 (4258478)",
     "In_transit": 30,
     "Total_preorders": 50,
-    "Stock": 37,
+    "Stock": 35,
     "RSP": 78600,
     "ETA_Almaty": "24.11.2025"
   },
@@ -10705,7 +10705,7 @@
     "Model": "Аккум. Сабельная пила Einhell TE-AP 18/13 Li - Solo (4326315)",
     "In_transit": 0,
     "Total_preorders": 54,
-    "Stock": 52,
+    "Stock": 50,
     "RSP": 45900,
     "ETA_Almaty": null
   },
@@ -10714,7 +10714,7 @@
     "Model": "Аккум. Циркулярная пила Einhell TP-CS 18/165 Li BL - Solo (4331225)",
     "In_transit": 0,
     "Total_preorders": 0,
-    "Stock": 64,
+    "Stock": 62,
     "RSP": 99600,
     "ETA_Almaty": null
   },
@@ -10732,7 +10732,7 @@
     "Model": "Сетев. Гравер Einhell TC-MT 150 E (4419380)",
     "In_transit": 0,
     "Total_preorders": 0,
-    "Stock": 91,
+    "Stock": 89,
     "RSP": 40600,
     "ETA_Almaty": null
   },
@@ -10759,7 +10759,7 @@
     "Model": "Аккум. Углошлифмашина Einhell TP-AG 18/125 F Li BL - Solo (4431175)",
     "In_transit": 0,
     "Total_preorders": 52,
-    "Stock": 39,
+    "Stock": 37,
     "RSP": 85200,
     "ETA_Almaty": null
   },
@@ -11093,7 +11093,7 @@
     "In_transit": 30,
     "Total_preorders": 0,
     "Stock": 0,
-    "RSP": 0,
+    "RSP": 65000,
     "ETA_Almaty": "24.11.2025"
   },
   {
