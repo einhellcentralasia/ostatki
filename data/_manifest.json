@@ -5,13 +5,13 @@
     "site_path": "/sites/Einhell",
     "xlsx_path": "/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Отгрузки клиентам_raw",
     "recursive": false,
-    "files_total": 190,
-    "files_xlsx": 190,
-    "processed_xlsx": 190,
+    "files_total": 191,
+    "files_xlsx": 191,
+    "processed_xlsx": 191,
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 720,
-    "runtime_s": 91.67
+    "runtime_s": 68.36
   },
   {
     "name": "transit_booked_table",
@@ -25,7 +25,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 178,
-    "runtime_s": 3.71
+    "runtime_s": 3.05
   },
   {
     "name": "booked_table",
@@ -39,7 +39,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 275,
-    "runtime_s": 5.78
+    "runtime_s": 4.32
   },
   {
     "name": "demo_astana_table",
@@ -53,7 +53,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 126,
-    "runtime_s": 5.45
+    "runtime_s": 4.37
   },
   {
     "name": "demo_table",
@@ -67,7 +67,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 409,
-    "runtime_s": 16.37
+    "runtime_s": 12.39
   },
   {
     "name": "service_table",
@@ -75,13 +75,13 @@
     "site_path": "/sites/Einhell",
     "xlsx_path": "/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Сервис_raw",
     "recursive": false,
-    "files_total": 54,
-    "files_xlsx": 54,
-    "processed_xlsx": 54,
+    "files_total": 55,
+    "files_xlsx": 55,
+    "processed_xlsx": 55,
     "skipped_xlsx": 0,
     "used_fallback": 0,
-    "unique_skus": 122,
-    "runtime_s": 25.32
+    "unique_skus": 123,
+    "runtime_s": 20.63
   },
   {
     "name": "inbound_table",
@@ -95,7 +95,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 856,
-    "runtime_s": 11.31
+    "runtime_s": 8.68
   },
   {
     "name": "sold_to_distr_table",
@@ -109,7 +109,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 747,
-    "runtime_s": 73.01
+    "runtime_s": 54.87
   },
   {
     "name": "spark_table",
@@ -123,7 +123,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 201,
-    "runtime_s": 13.61
+    "runtime_s": 9.8
   },
   {
     "name": "in_transit_table",
@@ -137,7 +137,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 190,
-    "runtime_s": 2.37
+    "runtime_s": 1.75
   },
   {
     "name": "preorders_table",
@@ -151,7 +151,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 143,
-    "runtime_s": 2.36
+    "runtime_s": 1.85
   },
   {
     "name": "tref_table",
@@ -165,6 +165,6 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 256,
-    "runtime_s": 150.69
+    "runtime_s": 122.78
   }
 ]

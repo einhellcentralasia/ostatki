@@ -67,7 +67,7 @@
     "Model": "Аккум. Ударный Шуруповерт Einhell TP-CD 18/50 Li-i BL-Solo (4513942)",
     "In_transit": 100,
     "Total_preorders": 0,
-    "Stock": 27,
+    "Stock": 26,
     "RSP": 47600,
     "ETA_Almaty": "24.11.2025"
   },
@@ -346,7 +346,7 @@
     "Model": "Аккумулятор Einhell 2x18V 4,0Ah PXC-Twinpack CB 1 (4511489)",
     "In_transit": 96,
     "Total_preorders": 56,
-    "Stock": -2,
+    "Stock": -4,
     "RSP": 39000,
     "ETA_Almaty": "24.11.2025"
   },
@@ -364,7 +364,7 @@
     "Model": "Зарядное устройство в комплекте Einhell 18V 4,0Ah PXC Starter Kit 1 (4512042)",
     "In_transit": 364,
     "Total_preorders": 492,
-    "Stock": 209,
+    "Stock": 208,
     "RSP": 23400,
     "ETA_Almaty": "16.12.2025"
   },
@@ -508,7 +508,7 @@
     "Model": "Аккум. Углошлифмашина Einhell AXXIO 18/125 - Solo (4431140)",
     "In_transit": 150,
     "Total_preorders": 52,
-    "Stock": 0,
+    "Stock": -2,
     "RSP": 60200,
     "ETA_Almaty": "24.11.2025"
   },
@@ -634,7 +634,7 @@
     "Model": "Аккум. Шуруповерт Einhell TE-CD 18/40 Li BL - Solo (4513997)",
     "In_transit": 96,
     "Total_preorders": 96,
-    "Stock": 37,
+    "Stock": 36,
     "RSP": 39000,
     "ETA_Almaty": "24.11.2025"
   },
@@ -1471,7 +1471,7 @@
     "Model": "Аккум. Очиститель окон Einhell BRILLIANTO - Solo (3437100)",
     "In_transit": 0,
     "Total_preorders": 0,
-    "Stock": 21,
+    "Stock": 20,
     "RSP": 39000,
     "ETA_Almaty": null
   },
