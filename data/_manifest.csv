@@ -1,13 +1,13 @@
 name,status,reason,site_path,xlsx_path,recursive,files_total,files_xlsx,processed_xlsx,skipped_xlsx,used_fallback,unique_skus,runtime_s
-sold_to_clients_table,ok,,/sites/Einhell,"/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Отгрузки клиентам_raw",False,190,190,190,0,0,720,71.68
-transit_booked_table,ok,,/sites/Einhell,"/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Бронь в пути_raw",False,6,6,6,0,0,178,2.98
-booked_table,ok,,/sites/Einhell,"/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Бронь клиентов_raw",False,10,10,10,0,0,275,4.47
-demo_astana_table,ok,,/sites/Einhell,"/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Демофонд Астана_raw",False,10,10,10,0,0,126,4.5
-demo_table,ok,,/sites/Einhell,"/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Демофонд_raw",False,34,34,34,0,0,409,12.92
-service_table,ok,,/sites/Einhell,"/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Сервис_raw",False,54,54,54,0,0,122,20.58
-inbound_table,ok,,/sites/Einhell,"/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Собственный товар на складе дистрибьютора_raw",False,23,23,23,0,0,856,9.15
-sold_to_distr_table,ok,,/sites/Einhell,"/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Товар дистрибьютора_raw",False,158,158,158,0,0,747,57.53
-spark_table,ok,,/sites/Einhell,"/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Товар на собственном складе_raw",False,28,28,28,0,0,201,10.72
-in_transit_table,ok,,/sites/Einhell,"/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Товары в пути_raw",False,3,3,3,0,0,190,1.9
-preorders_table,ok,,/sites/Einhell,"/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Предзаказы_raw",False,3,3,3,0,0,143,1.93
-tref_table,ok,,/sites/Einhell_common,/Shared Documents/General/Маркетплейсы/Preorders/Preorders_raw,False,242,242,242,0,0,256,131.52
+sold_to_clients_table,ok,,/sites/Einhell,"/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Отгрузки клиентам_raw",False,190,190,190,0,0,720,103.02
+transit_booked_table,ok,,/sites/Einhell,"/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Бронь в пути_raw",False,6,6,6,0,0,178,5.77
+booked_table,ok,,/sites/Einhell,"/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Бронь клиентов_raw",False,10,10,10,0,0,275,7.98
+demo_astana_table,ok,,/sites/Einhell,"/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Демофонд Астана_raw",False,10,10,10,0,0,126,6.1
+demo_table,ok,,/sites/Einhell,"/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Демофонд_raw",False,34,34,34,0,0,409,19.26
+service_table,ok,,/sites/Einhell,"/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Сервис_raw",False,54,54,54,0,0,122,28.45
+inbound_table,ok,,/sites/Einhell,"/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Собственный товар на складе дистрибьютора_raw",False,23,23,23,0,0,856,13.64
+sold_to_distr_table,ok,,/sites/Einhell,"/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Товар дистрибьютора_raw",False,158,158,158,0,0,747,81.86
+spark_table,ok,,/sites/Einhell,"/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Товар на собственном складе_raw",False,28,28,28,0,0,201,14.69
+in_transit_table,ok,,/sites/Einhell,"/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Товары в пути_raw",False,3,3,3,0,0,190,2.71
+preorders_table,ok,,/sites/Einhell,"/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Предзаказы_raw",False,3,3,3,0,0,143,2.93
+tref_table,ok,,/sites/Einhell_common,/Shared Documents/General/Маркетплейсы/Preorders/Preorders_raw,False,242,242,242,0,0,256,167.69
