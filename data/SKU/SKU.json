@@ -45,25 +45,25 @@
     "SKU": "4513942",
     "Model": "Аккум. Ударный Шуруповерт Einhell TP-CD 18/50 Li-i BL-Solo (4513942)",
     "RSP": 47600.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4510034",
     "Model": "Аккум. Винтоверт Einhell TE-CI 18/1 Li-Solo (4510034)",
     "RSP": 37400.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4331220",
     "Model": "Аккум. Циркулярная пила Einhell TE-CS 18/150 Li - Solo (4331220)",
     "RSP": 45400.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4321209",
     "Model": "Аккум. Лобзик Einhell TC-JS 18 Li - Solo (4321209)",
     "RSP": 29200.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4326300",
@@ -105,13 +105,13 @@
     "SKU": "4300890",
     "Model": "Аккум. Торцовочная пила Einhell TE-MS 18/210 Li-Solo (4300890)",
     "RSP": 99000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4340450",
     "Model": "Аккум. Настольная пила Einhell TE-TS 36/210 Li-Solo (4340450)",
     "RSP": 156400.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4020415",
@@ -123,13 +123,13 @@
     "SKU": "4257990",
     "Model": "Сетев. Перфоратор SDS-Plus Einhell TC-RH 620 4F (4257990)",
     "RSP": 45900.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4258237",
     "Model": "Сетев. Перфоратор SDS-Plus Einhell TC-RH 900 (4258237)",
     "RSP": 54300.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4258508",
@@ -141,7 +141,7 @@
     "SKU": "4259848",
     "Model": "Сетев. Ударная дрель Einhell TC-ID 720/1 E (4259848)",
     "RSP": 31100.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4258621",
@@ -153,7 +153,7 @@
     "SKU": "4465155",
     "Model": "Сетев. Реноватор Einhell TE-MG 350 EQ (4465155)",
     "RSP": 54400.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4350474",
@@ -207,7 +207,7 @@
     "SKU": "4340510",
     "Model": "Сетев. Настольная пила Einhell TC-TS 254 U (4340510)",
     "RSP": 108800.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4007325",
@@ -231,7 +231,7 @@
     "SKU": "4511489",
     "Model": "Аккумулятор Einhell 2x18V 4,0Ah PXC-Twinpack CB 1 (4511489)",
     "RSP": 39000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4512097",
@@ -267,7 +267,7 @@
     "SKU": "4513900",
     "Model": "Аккум. Перфоратор SDS-Plus Einhell HEROCCO 18/20 - Solo (4513900)",
     "RSP": 82900.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4513950",
@@ -291,7 +291,7 @@
     "SKU": "4514260",
     "Model": "Аккум. Перфоратор SDS-Plus Einhell TE-HD 18/20 Li - Solo (4514260)",
     "RSP": 88400.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4514265",
@@ -303,13 +303,13 @@
     "SKU": "4514270",
     "Model": "Аккум. Перфоратор SDS-Plus Einhell TP-HD 18/26 D Li BL - Solo (4514270)",
     "RSP": 118200.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4513960",
     "Model": "Аккум. Ударная дрель Einhell TE-ID 18 Li - Solo (4513960)",
     "RSP": 39000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4258760",
@@ -339,13 +339,13 @@
     "SKU": "4431140",
     "Model": "Аккум. Углошлифмашина Einhell AXXIO 18/125 - Solo (4431140)",
     "RSP": 60200.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4431144",
     "Model": "Аккум. Углошлифмашина Einhell AXXIO 18/150 - Solo (4431144)",
     "RSP": 88400.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4431150",
@@ -369,13 +369,13 @@
     "SKU": "4431155",
     "Model": "Аккум. Углошлифмашина Einhell TP-AG 18/125 CE Q Li - Solo (4431155)",
     "RSP": 65800.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4431160",
     "Model": "Аккум. Углошлифмашина Einhell AXXIO 36/230 Q - Solo (4431160)",
     "RSP": 136000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4431165",
@@ -393,7 +393,7 @@
     "SKU": "4465190",
     "Model": "Аккум. Реноватор Einhell TP-MG 18 Li BL - Solo (4465190)",
     "RSP": 88400.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4465195",
@@ -423,13 +423,13 @@
     "SKU": "4513997",
     "Model": "Аккум. Шуруповерт Einhell TE-CD 18/40 Li BL - Solo (4513997)",
     "RSP": 39000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4514210",
     "Model": "Аккум. Шуруповерт Einhell TP-CD 18/60 Li BL - Solo (4514210)",
     "RSP": 61200.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4513850",
@@ -447,7 +447,7 @@
     "SKU": "4514300",
     "Model": "Аккум. Шуруповерт Einhell TP-CD 18/80 Li BL-Solo (4514300)",
     "RSP": 68000.0,
-    "ETA_Almaty": "16.12.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4513830",
@@ -519,13 +519,13 @@
     "SKU": "4514305",
     "Model": "Аккум. Ударный Шуруповерт Einhell TP-CD 18/80 Li-i BL - Solo (4514305)",
     "RSP": 74800.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4514310",
     "Model": "Аккум. Ударный Шуруповерт Einhell TP-CD 18/120 Li-i BL - Solo (4514310)",
     "RSP": 99900.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4513935",
@@ -585,13 +585,13 @@
     "SKU": "4510070",
     "Model": "Аккум. Гайковерт Einhell IMPAXXO 18/450 - Solo (4510070)",
     "RSP": 105500.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4510080",
     "Model": "Аккум. Гайковерт Einhell IMPAXXO 18/230 - Solo (4510080)",
     "RSP": 78200.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4259980",
@@ -603,25 +603,25 @@
     "SKU": "4461000",
     "Model": "Аккум. Ленточная шлифмашина Einhell TE-BF 18 Li-solo (4461000)",
     "RSP": 71400.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4514290",
     "Model": "Аккум. Угловой шуруповерт Einhell TE-AD 18 Li - Solo (4514290)",
     "RSP": 39900.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4345400",
     "Model": "Аккум. Рубанок Einhell TE-PL 18/82 Li - Solo (4345400)",
     "RSP": 74800.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4345405",
     "Model": "Аккум. Рубанок Einhell TP-PL 18/3 Li BL - Solo (4345405)",
     "RSP": 108800.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4350412",
@@ -633,7 +633,7 @@
     "SKU": "4350630",
     "Model": "Аккум. Ламельный фрезер Einhell TE-BJ 18 Li - Solo (4350630)",
     "RSP": 74800.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4350411",
@@ -657,7 +657,7 @@
     "SKU": "4331210",
     "Model": "Аккум. Циркулярная пила Einhell TP-CS 18/190 Li BL - Solo (4331210)",
     "RSP": 115600.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4331100",
@@ -669,13 +669,13 @@
     "SKU": "4321200",
     "Model": "Аккум. Лобзик Einhell TE-JS 18/80 Li-Solo (4321200)",
     "RSP": 42800.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4321260",
     "Model": "Аккум. Лобзик Einhell TP-JS 18/135 Li BL - Solo (4321260)",
     "RSP": 75400.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4321265",
@@ -699,7 +699,7 @@
     "SKU": "4326310",
     "Model": "Аккум. Сабельная пила Einhell TP-AP 18/28 Li BL - Solo (4326310)",
     "RSP": 81600.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4460708",
@@ -747,7 +747,7 @@
     "SKU": "4460730",
     "Model": "Аккум. Мультишлифмашина Einhell TE-OS 18/113 3X Li - Solo (4460730)",
     "RSP": 64600.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4460731",
@@ -759,13 +759,13 @@
     "SKU": "4260025",
     "Model": "Аккум. Краскопульт Einhell TC-SY 18/60 Li-Solo (4260025)",
     "RSP": 54400.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4260040",
     "Model": "Аккум. Краскопульт Einhell TE-SY 18/90 Li-Solo (4260040)",
     "RSP": 81600.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4514114",
@@ -777,7 +777,7 @@
     "SKU": "4514115",
     "Model": "Аккум. Фонарь Einhell TC-CL 18/1800 Li - Solo (4514115)",
     "RSP": 39900.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4514130",
@@ -795,13 +795,13 @@
     "SKU": "4514172",
     "Model": "Аккум. Фонарь Einhell TP-CL 18/3000 Li - Solo (4514172)",
     "RSP": 67900.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4514175",
     "Model": "Аккум. Фонарь Einhell TC-CL 18/350 Li - Solo (4514175)",
     "RSP": 19900.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4514170",
@@ -831,25 +831,25 @@
     "SKU": "4522200",
     "Model": "Аккум. Клеевой пистолет Einhell TE-CG 18 Li - Solo (4522200)",
     "RSP": 25800.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "3408001",
     "Model": "Аккум. Воздуходувка Einhell TE-CB 18/180 Li-Solo (3408001)",
     "RSP": 27200.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4520500",
     "Model": "Аккум. Технический фен Einhell TE-HA 18 Li - Solo (4520500)",
     "RSP": 49000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4257790",
     "Model": "Аккум. Гвоздезабиватель Einhell TE-CN 18 Li - Solo (4257790)",
     "RSP": 64600.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4257795",
@@ -861,13 +861,13 @@
     "SKU": "4522250",
     "Model": "Аккум. Пистолет для герметика Einhell TE-SG 18/10 Li - Solo (4522250)",
     "RSP": 67900.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4419360",
     "Model": "Аккум. Гравер Einhell TE-MT 18/34 Li Solo (4419360)",
     "RSP": 57800.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4326551",
@@ -903,19 +903,19 @@
     "SKU": "4504215",
     "Model": "Аккум. Ленточная пила Einhell TE-MB 18/127 U Li-Solo (4504215)",
     "RSP": 183600.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4504216",
     "Model": "Аккум. Ленточная пила Einhell TE-MB 18/127 Li-Solo (4504216)",
     "RSP": 136000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4020430",
     "Model": "Аккум. Компрессор Einhell PRESSITO 18/25 Hybrid - Solo (4020430)",
     "RSP": 81600.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4020460",
@@ -1023,7 +1023,7 @@
     "SKU": "3437101",
     "Model": "Телескопический набор BRILLIANTO Einhell Teleskopstangenset BRILLIANTO (3437101)",
     "RSP": 37400.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "3437102",
@@ -1041,7 +1041,7 @@
     "SKU": "2352040",
     "Model": "Аккум. Машина для подметания Einhell TE-SW 18/610 Li-Solo (2352040)",
     "RSP": 136000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "2352050",
@@ -1053,13 +1053,13 @@
     "SKU": "2347120",
     "Model": "Аккум. Пылесос Einhell TE-VC 18 Li-Solo (2347120)",
     "RSP": 32900.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "2347190",
     "Model": "Аккум. Пылесос Einhell TE-HV 18/06 Li - Solo (2347190)",
     "RSP": 47600.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "2347130",
@@ -1119,7 +1119,7 @@
     "SKU": "4512102",
     "Model": "Зарядное устройство в комплекте Einhell 2x2 Power X-Quattrocharger 4A (4512102)",
     "RSP": 65000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4512103",
@@ -1131,7 +1131,7 @@
     "SKU": "4512113",
     "Model": "Зарядное устройство в комплекте Einhell Power X-Car Charger 3A (4512113)",
     "RSP": 35700.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4512155",
@@ -1185,13 +1185,13 @@
     "SKU": "4511618",
     "Model": "Аккумулятор Einhell 18V 3,0Ah SEALED PXC Plus A2 (4511618)",
     "RSP": 35400.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4511627",
     "Model": "Аккумулятор Einhell 18V 4,0Ah SEALED PXC Plus (4511627)",
     "RSP": 40800.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4140151",
@@ -1227,7 +1227,7 @@
     "SKU": "4257935",
     "Model": "Сетев. Перфоратор SDS-Max Einhell TE-RH 40 3F (4257935)",
     "RSP": 142800.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4257940",
@@ -1371,7 +1371,7 @@
     "SKU": "4258545",
     "Model": "Сетев. Строительный миксер Einhell TC-MX 1200 E (4258545)",
     "RSP": 54400.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4258550",
@@ -1383,13 +1383,13 @@
     "SKU": "4258555",
     "Model": "Сетев. Строительный миксер Einhell TE-MX 1600-2 CE (4258555)",
     "RSP": 88400.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4258561",
     "Model": "Сетев. Строительный миксер Einhell TE-MX 1600-2 CE Twin (4258561)",
     "RSP": 102000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "49497005",
@@ -1761,7 +1761,7 @@
     "SKU": "4350640",
     "Model": "Сетев. Ламельный фрезер Einhell TE-BJ 900 (4350640)",
     "RSP": 68000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4350730",
@@ -1779,7 +1779,7 @@
     "SKU": "4350740",
     "Model": "Сетев. Штроборез Einhell TE-MA 1700 (4350740)",
     "RSP": 129200.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4350470",
@@ -1821,7 +1821,7 @@
     "SKU": "4345310",
     "Model": "Сетев. Рубанок Einhell TC-PL 750 (4345310)",
     "RSP": 34000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4345320",
@@ -1845,7 +1845,7 @@
     "SKU": "4331005",
     "Model": "Сетев. Циркулярная пила Einhell TE-CS 190/1 (4331005)",
     "RSP": 55900.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4331010",
@@ -1905,7 +1905,7 @@
     "SKU": "4321140",
     "Model": "Сетев. Лобзик Einhell TC-JS 85 (4321140)",
     "RSP": 32500.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4321145",
@@ -2001,13 +2001,13 @@
     "SKU": "4466245",
     "Model": "Сетев. Ленточная шлифмашина Einhell TE-BS 850 E (4466245)",
     "RSP": 79000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4466260",
     "Model": "Сетев. Ленточная шлифмашина Einhell TC-BS 8038 (4466260)",
     "RSP": 44200.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "49912575",
@@ -2049,7 +2049,7 @@
     "SKU": "4259960",
     "Model": "Сетев. Шлифмашина для стен и потолка Einhell TE-DW 225 X (4259960)",
     "RSP": 149600.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4259940",
@@ -2253,7 +2253,7 @@
     "SKU": "4257890",
     "Model": "Сетев. Гвоздезабиватель Einhell TC-EN 20 E (4257890)",
     "RSP": 25100.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4522170",
@@ -2307,7 +2307,7 @@
     "SKU": "4257880",
     "Model": "Аккум. Скобозабиватель Einhell TC-CT 3,6 Li (4257880)",
     "RSP": 32600.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4522190",
@@ -2367,7 +2367,7 @@
     "SKU": "4540011",
     "Model": "Кейс Einhell E-Case S-F (4540011)",
     "RSP": 23800.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4540012",
@@ -2385,31 +2385,31 @@
     "SKU": "4540014",
     "Model": "Кейс с колесиками Einhell E-Case L with wheels (4540014)",
     "RSP": 61200.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4540015",
     "Model": "Комплект кейсов Einhell E-Case Tower (4540015)",
     "RSP": 96800.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4540019",
     "Model": "Кейс + поролоновый вкладыш Einhell E-Case S-F incl. grid foam (4540019)",
     "RSP": 34000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4540020",
     "Model": "Кейс + пластиковые перегородки Einhell E-Case S-F incl. dividers (4540020)",
     "RSP": 30600.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4540021",
     "Model": "Кейс Einhell E-Case M (4540021)",
     "RSP": 39000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4540031",
@@ -2457,7 +2457,7 @@
     "SKU": "4300380",
     "Model": "Сетев. Торцовочная пила Einhell TC-SM 216 (4300380)",
     "RSP": 115600.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4300385",
@@ -2715,7 +2715,7 @@
     "SKU": "49081505",
     "Model": "Полотно для ленточной пилы Einhell Bandsaw blade 1400x8x0,65 TPI6 (49081505)",
     "RSP": 12200.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "49081506",
@@ -2805,13 +2805,13 @@
     "SKU": "4007360",
     "Model": "Сетев. Компрессор Einhell TC-AC 270/50/8 (4007360)",
     "RSP": 136000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4010393",
     "Model": "Сетев. Компрессор Einhell TC-AC 240/50/10 OF (4010393)",
     "RSP": 159800.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4010450",
@@ -2859,7 +2859,7 @@
     "SKU": "4020590",
     "Model": "Сетев. Компрессор Einhell TC-AC 200/24/8 OF (4020590)",
     "RSP": 102000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4020600",
@@ -2871,7 +2871,7 @@
     "SKU": "4020610",
     "Model": "Сетев. Компрессор Einhell TE-AC 135/24 Silent Plus (4020610)",
     "RSP": 136000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4020620",
@@ -3369,7 +3369,7 @@
     "SKU": "4138965",
     "Model": "Пневмо Гайковерт Einhell TC-PW 610 Compact (4138965)",
     "RSP": 98600.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4137790",
@@ -3411,13 +3411,13 @@
     "SKU": "4250690",
     "Model": "Сетев. Сверлильный станок Einhell TE-BD 550 E (4250690)",
     "RSP": 197200.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4250715",
     "Model": "Сетев. Сверлильный станок Einhell TE-BD 750 E (4250715)",
     "RSP": 285500.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4520592",
@@ -3513,13 +3513,13 @@
     "SKU": "4412559",
     "Model": "Сетев. Точильный станок Einhell TC-XG 75 Kit (4412559)",
     "RSP": 51000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4412632",
     "Model": "Сетев. Точильный станок Einhell TC-BG 150 (4412632)",
     "RSP": 34000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4412633",
@@ -3537,7 +3537,7 @@
     "SKU": "4418008",
     "Model": "Сетев. Точильный станок Einhell TC-WG 200 (4418008)",
     "RSP": 74800.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4417242",
@@ -3555,7 +3555,7 @@
     "SKU": "4466154",
     "Model": "Сетев. Точильный станок Einhell TC-US 350 (4466154)",
     "RSP": 54400.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "49492074",
@@ -3681,7 +3681,7 @@
     "SKU": "4503139",
     "Model": "Сетев. Монтажная пила Einhell TC-MC 355/1 (4503139)",
     "RSP": 115600.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "49791975",
@@ -3831,13 +3831,13 @@
     "SKU": "4510151",
     "Model": "Ящик для инструментов Einhell TC-TW 150 (4510151)",
     "RSP": 224400.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4510170",
     "Model": "Ящик для инструментов Einhell TC-TW 100 (4510170)",
     "RSP": 95200.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "2210110",
@@ -3951,13 +3951,13 @@
     "SKU": "2351113",
     "Model": "Фильтр для пылесоса в комплекте Einhell Pleated Filter With Lid (2351113)",
     "RSP": 14200.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "2351126",
     "Model": "Фильтр для пылесоса в комплекте Einhell Pleated filter dust class L (2351126)",
     "RSP": 16300.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "2351132",
@@ -3987,7 +3987,7 @@
     "SKU": "2351150",
     "Model": "Мешки для пылесоса в комплекте Einhell Dirt Bag Filter 25l (5 pcs.) (2351150)",
     "RSP": 12200.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "2351152",
@@ -4017,7 +4017,7 @@
     "SKU": "2351180",
     "Model": "Мешки для пылесоса в комплекте Einhell Dirt Bag Filter 40l (5 pcs) (2351180)",
     "RSP": 19000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "2351185",
@@ -4035,7 +4035,7 @@
     "SKU": "2351195",
     "Model": "Мешки для пылесоса в комплекте Einhell Synthetic dust bag 40L (5 pcs) (2351195)",
     "RSP": 21700.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "2351204",
@@ -4053,7 +4053,7 @@
     "SKU": "2351216",
     "Model": "Насадка для пола с колесами Einhell Bodendüse mit Rollen (2351216)",
     "RSP": 20400.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "2351230",
@@ -5085,7 +5085,7 @@
     "SKU": "3433550",
     "Model": "Аккум. Воздуходувка Einhell GP-LB 18/200 Li GK-Solo (3433550)",
     "RSP": 71400.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "3433555",
@@ -5097,7 +5097,7 @@
     "SKU": "3433620",
     "Model": "Аккум. Воздуходувка Einhell GP-LB 36/210 Li E-Solo (3433620)",
     "RSP": 95200.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "3433600",
@@ -5325,7 +5325,7 @@
     "SKU": "4499940",
     "Model": "Аккум. Станок для заточки цепей Einhell GE-CS 18 Li-Solo (4499940)",
     "RSP": 34000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4600020",
@@ -5493,13 +5493,13 @@
     "SKU": "2070110",
     "Model": "Аккум. Насос Einhell CE-AP 18 Li-Solo (2070110)",
     "RSP": 27200.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "2071010",
     "Model": "Аккум. Компрессор Einhell CE-CC 18 Li-Solo (2071010)",
     "RSP": 37400.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "2330805",
@@ -5511,7 +5511,7 @@
     "SKU": "3408035",
     "Model": "Аккум. Вентилятор Einhell GE-CF 18/2200 Li (3408035)",
     "RSP": 34000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "3404333",
@@ -6225,7 +6225,7 @@
     "SKU": "4500163",
     "Model": "Запасная шина 15 см 1,0 Einhell Ersatzschwert 15cm 1,0 (4500163)",
     "RSP": 10200.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4500193",
@@ -6267,7 +6267,7 @@
     "SKU": "4499924",
     "Model": "Сетев. Станок для заточки цепей Einhell GC-CS 85 E Set (4499924)",
     "RSP": 34000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4500480",
@@ -6291,7 +6291,7 @@
     "SKU": "4500174",
     "Model": "Запасная цепь 15 см 1,0 28 зуб. 7,62 Einhell Ersatzkette 15cm 1,0 28T 7,62 (4500174)",
     "RSP": 11500.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4500168",
@@ -6309,13 +6309,13 @@
     "SKU": "4500191",
     "Model": "Запасная шина 30 см 1,1 Einhell Ersatzschwert 30cm 1,1 (4500191)",
     "RSP": 23100.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4500192",
     "Model": "Запасная цепь 30 см 1,1 45 зуб. 3/8 Einhell Ersatzkette 30cm 1,1 45T 3/8 (4500192)",
     "RSP": 23100.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4500363",
@@ -6339,25 +6339,25 @@
     "SKU": "4501753",
     "Model": "Запасная шина 25 см 1,1 Einhell Spare Bar 25cm 1,1 (4501753)",
     "RSP": 19000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4501754",
     "Model": "Запасная цепь 25 см 1,1 40 зуб. 3/8 Einhell Spare Chain 25 cm 1,1 40T 3/8 (4501754)",
     "RSP": 19000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4500196",
     "Model": "Запасная цепь 35 см 1,1 52 зуб. 3/8 Einhell Spare Chain 35cm 1,1 52T 3/8 (4500196)",
     "RSP": 20400.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4500197",
     "Model": "Запасная шина 35 см 1,1 Einhell Spare Bar 35cm 1,1 (4500197)",
     "RSP": 20400.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4500320",
@@ -6825,7 +6825,7 @@
     "SKU": "1002225",
     "Model": "Зарядное устройство для автомобильного аккумулятора Einhell CE-BC 4 M (1002225)",
     "RSP": 25800.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "1002235",
@@ -6939,7 +6939,7 @@
     "SKU": "2048304",
     "Model": "Сетев. Гайковерт Einhell CC-IW 450 (2048304)",
     "RSP": 40800.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4259951",
@@ -7041,7 +7041,7 @@
     "SKU": "4510085",
     "Model": "Аккум. Винтоверт Einhell TP-CI 18/220 Li BL - Solo (4510085)",
     "RSP": 66200.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4140135",
@@ -7101,19 +7101,19 @@
     "SKU": "4257992",
     "Model": "Сетев. Перфоратор SDS-Plus Einhell TC-RH 620 4F Kit (4257992)",
     "RSP": 64900.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4258478",
     "Model": "Сетев. Перфоратор SDS-Plus Einhell TC-RH 1600 (4258478)",
     "RSP": 78600.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4258565",
     "Model": "Сетев. Строительный миксер Einhell TP-MX 1700-2 CE (4258565)",
     "RSP": 98300.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4261010",
@@ -7131,7 +7131,7 @@
     "SKU": "4321270",
     "Model": "Аккум. Лобзик Einhell TE-JS 18/100 Li - Solo (4321270)",
     "RSP": 53100.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4326315",
@@ -7149,7 +7149,7 @@
     "SKU": "4350800",
     "Model": "Аккум. Штроборез Einhell TP-MA 36/30 Li BL - Solo (4350800)",
     "RSP": 178900.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4419380",
@@ -7161,7 +7161,7 @@
     "SKU": "4419925",
     "Model": "Сетев. Рейсмусовый станок Einhell TE-SP 330 (4419925)",
     "RSP": 340800.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4430985",
@@ -7179,19 +7179,19 @@
     "SKU": "4514148",
     "Model": "USB-адаптер Einhell TC-CP 18 Li USB A/C-Solo (4514148)",
     "RSP": 13100.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4514180",
     "Model": "Аккум. Фонарь Einhell TE-CL 18/1000 S Li - Solo (4514180)",
     "RSP": 36700.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4514315",
     "Model": "Аккум. Ударный Шуруповерт Einhell TP-CD 18/70 Li-i BL - Solo (4514315)",
     "RSP": 68800.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4514320",
@@ -7365,7 +7365,7 @@
     "SKU": "4173773",
     "Model": "Аккум. Катушка с поливным шлангом Einhell GE-HR 18/30-1 Li-Solo (4173773)",
     "RSP": 162300.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4173774",
@@ -7395,7 +7395,7 @@
     "SKU": "4432000",
     "Model": "Аккум. Отрезная машина Einhell TP-CO 18/76-C Li BL - Solo (4432000)",
     "RSP": 65000.0,
-    "ETA_Almaty": "24.11.2025"
+    "ETA_Almaty": null
   },
   {
     "SKU": "4540037",

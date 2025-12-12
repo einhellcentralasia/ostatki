@@ -11,7 +11,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 730,
-    "runtime_s": 101.84
+    "runtime_s": 101.37
   },
   {
     "name": "transit_booked_table",
@@ -25,7 +25,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 178,
-    "runtime_s": 5.13
+    "runtime_s": 3.7
   },
   {
     "name": "booked_table",
@@ -39,7 +39,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 275,
-    "runtime_s": 8.03
+    "runtime_s": 5.93
   },
   {
     "name": "demo_astana_table",
@@ -53,7 +53,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 126,
-    "runtime_s": 6.97
+    "runtime_s": 5.68
   },
   {
     "name": "demo_table",
@@ -67,7 +67,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 409,
-    "runtime_s": 19.69
+    "runtime_s": 16.83
   },
   {
     "name": "service_table",
@@ -81,7 +81,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 123,
-    "runtime_s": 26.89
+    "runtime_s": 26.27
   },
   {
     "name": "inbound_table",
@@ -89,13 +89,13 @@
     "site_path": "/sites/Einhell",
     "xlsx_path": "/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Собственный товар на складе дистрибьютора_raw",
     "recursive": false,
-    "files_total": 23,
-    "files_xlsx": 23,
-    "processed_xlsx": 23,
+    "files_total": 24,
+    "files_xlsx": 24,
+    "processed_xlsx": 24,
     "skipped_xlsx": 0,
     "used_fallback": 0,
-    "unique_skus": 856,
-    "runtime_s": 11.74
+    "unique_skus": 889,
+    "runtime_s": 15.46
   },
   {
     "name": "sold_to_distr_table",
@@ -103,13 +103,13 @@
     "site_path": "/sites/Einhell",
     "xlsx_path": "/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Товар дистрибьютора_raw",
     "recursive": false,
-    "files_total": 158,
-    "files_xlsx": 158,
-    "processed_xlsx": 158,
+    "files_total": 159,
+    "files_xlsx": 159,
+    "processed_xlsx": 159,
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 747,
-    "runtime_s": 76.13
+    "runtime_s": 79.24
   },
   {
     "name": "spark_table",
@@ -123,7 +123,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 201,
-    "runtime_s": 14.16
+    "runtime_s": 14.38
   },
   {
     "name": "in_transit_table",
@@ -131,13 +131,13 @@
     "site_path": "/sites/Einhell",
     "xlsx_path": "/Shared Documents/General/Einhell_internal/Остатки, товары в пути/Товары в пути_raw",
     "recursive": false,
-    "files_total": 3,
-    "files_xlsx": 3,
-    "processed_xlsx": 3,
+    "files_total": 2,
+    "files_xlsx": 2,
+    "processed_xlsx": 2,
     "skipped_xlsx": 0,
     "used_fallback": 0,
-    "unique_skus": 190,
-    "runtime_s": 2.39
+    "unique_skus": 54,
+    "runtime_s": 1.84
   },
   {
     "name": "preorders_table",
@@ -151,7 +151,7 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 143,
-    "runtime_s": 2.37
+    "runtime_s": 2.56
   },
   {
     "name": "tref_table",
@@ -165,6 +165,6 @@
     "skipped_xlsx": 0,
     "used_fallback": 0,
     "unique_skus": 259,
-    "runtime_s": 165.72
+    "runtime_s": 157.24
   }
 ]
